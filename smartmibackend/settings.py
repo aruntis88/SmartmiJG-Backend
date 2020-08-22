@@ -83,28 +83,28 @@ WSGI_APPLICATION = 'smartmibackend.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # postgress settings
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'smartmibackend',
-        'USER': 'postgres',
-        'PASSWORD': '1081',
-        'HOST': 'localhost'
-    }
-}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': os.environ.get('DB_NAME'),
-#         'USER': os.environ.get('DB_USER'),
-#         'PASSWORD': os.environ.get('DB_PASSWORD'),
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#         'OPTIONS': {
-#             # "autocommit": True,
-#         },
+#         'NAME': 'smartmibackend',
+#         'USER': 'postgres',
+#         'PASSWORD': '1081',
+#         'HOST': 'localhost'
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'OPTIONS': {
+            # "autocommit": True,
+        },
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
