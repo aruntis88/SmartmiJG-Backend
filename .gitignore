@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+smartmibackend/media/
+smartmibackend/staticfiles/
+*.pyc
+*.sqlite3
+*/migrations
+
